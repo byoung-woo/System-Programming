@@ -52,8 +52,6 @@ int main(int argc, char *argv[]) {
 
     close(fdpriv);
 
-    // private FIFO 삭제
-    unlink(msg.privfifo);
     return 0;
 }
 
