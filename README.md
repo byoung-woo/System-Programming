@@ -1,7 +1,7 @@
 # 🐧 시스템 프로그래밍 (System Programming) 학습 및 실습 정리
 
-이 저장소는 **리눅스 환경에서 시스템 프로그래밍 핵심 개념을 이해**하고, **저수준 인터페이스(System Call)**를 활용해 다양한 기능을 구현한 실습 코드들을 모아둔 기록입니다.  
-파일 입출력부터 프로세스 제어, IPC(Inter-Process Communication), 멀티스레딩까지 단계적으로 실습하며 정리했습니다.
+이 저장소는 **리눅스 환경에서 시스템 프로그래밍 핵심 개념을 이해**하고, 저수준 인터페이스(System Call)를 활용해 다양한 기능을 구현한 실습 코드들을 모아둔 기록입니다.  
+파일 입출력부터 프로세스 제어, 멀티스레딩까지 단계적으로 실습하며 정리했습니다.
 
 ---
 
@@ -9,7 +9,7 @@
 
 - **Language:** C  
 - **Environment:** Linux (WSL), GCC  
--- **Key Concepts:** System Calls, File I/O, Signals, Pipes, FIFOs, Pthreads
+- **Key Concepts:** System Calls, File I/O, Signals, Pipes, FIFOs, Pthreads
 
 ---
 
