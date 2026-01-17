@@ -7,7 +7,7 @@
 void *thread_func(void *arg) {
     int val = atoi((char *)arg); // 입력값을 정수로 변환
     int *result = malloc(sizeof(int)); // 동적 메모리 할당
-    if (result == NULL) {//오류제어 굳이필요없음
+    if (result == NULL) {//오류제어 
         perror("malloc failed");
         pthread_exit(NULL);
     }

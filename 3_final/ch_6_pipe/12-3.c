@@ -20,10 +20,10 @@ int main(int argc, char *argv[]){
 		close(fd[0]);
 		
 		if(argc >1){
-		execl("/bin/cat", "cat", argv[1], (char*)NULL);
+			execl("/bin/cat", "cat", argv[1], (char*)NULL);
 		}
 		else{
-		execl("/bin/cat", "cat", NULL);
+			execl("/bin/cat", "cat", NULL);
 		}
 
 		perror("execl");

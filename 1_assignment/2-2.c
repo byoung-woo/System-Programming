@@ -27,8 +27,8 @@ int main(int argc, char *argv[]){
 	lseek(fd1, 1, SEEK_SET);
 	while(read(fd1, buf, 1)>0){
 		write(fd3, buf, 1);
-			lseek(fd1, 1, SEEK_CUR);
-			}
+		lseek(fd1, 1, SEEK_CUR);
+	}
 	close(fd1); close(fd2); close(fd3);
 	printf("\n");
 }
