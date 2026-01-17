@@ -21,12 +21,12 @@ int main(int argc, char *argv[]){
 
 	lseek(fd1, -1, SEEK_END);
 	while(1){
-	read(fd1, buf, 1);
-	write(fd2, buf,1);
-	if(lseek(fd1, -2, SEEK_CUR)==0){
-		read(fd1, buf,1);
-		write(fd2, buf, 1);
-		break;
-		}
+		read(fd1, buf, 1);
+		write(fd2, buf,1);
+		if(lseek(fd1, -2, SEEK_CUR)==0){
+			read(fd1, buf,1);
+			write(fd2, buf, 1);
+			break;
+			}
 	}
 }

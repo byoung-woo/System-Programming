@@ -21,14 +21,14 @@ int main(int argc, char *argv[]){
 	if((fd3=open(argv[3], O_WRONLY|O_CREAT|O_EXCL, 0644)));
 
 	while(read(fd1, buf, 1)>0){
-	write(fd2, buf, 1);
-	lseek(fd1, 1, SEEK_CUR);
+		write(fd2, buf, 1);
+		lseek(fd1, 1, SEEK_CUR);
 	}
 	lseek(fd1, 1, SEEK_SET);
 	while(read(fd1, buf, 1)>0){
-	write(fd3, buf, 1);
-        lseek(fd1, 1, SEEK_CUR);
-        }
+		write(fd3, buf, 1);
+			lseek(fd1, 1, SEEK_CUR);
+			}
 	close(fd1); close(fd2); close(fd3);
 	printf("\n");
 }
